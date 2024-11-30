@@ -1,0 +1,96 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
+  "body": {
+    "doNotList": false,
+    "givenName": {
+      "@value": "Miggi_D"
+    },
+    "motivations": {
+      "@value": "Driven by my deep interest in Blockchain technology and Cardano's philosophy, coupled with my professional experience I have a diverse background with extensive experience in technology, finance and communty managment, which equips me with the unique perspective needed to effectivily contribute to Cardano's governance as a DRep, my involvement in the Cardano community, and my commitment to improving the network's governance, I am motivated to become a DRep to leverage my intergrity, skills, and vision for long-term community and technological advancement within Cardano."
+    },
+    "objectives": {
+      "@value": "As a Cardano DRep, my objectives include promoting Cardano's decentralization and long-term growth, representingand advocating for ADA holders with inclusivity and transparency, influencing governance towards sustainability and security, never supporting the burning of ADA, enhancing community engagement through education and relationship building while commiting my time and adaptability to ensure Cardano remains a leader in decentralized finance and governance, always aligning technological advancements with the community's vision for financial freedom and privacy."
+    },
+    "paymentAddress": {
+      "@value": "addr1qyh0jldx9gxd7mq4733ufklthcw7amtqu4npjgzu9gc0r9jywx4r86hnzrdpwpt57hjtu5g6ky2p9whc3c57ja4v08lqt3jdtn"
+    },
+    "qualifications": {
+      "@value": "With a geat understanding of blockchain technology and project managment combined with social and analytical skills, I can offer training sessions to the Cardano community and effectively represent their interests in governance decisions. "
+    },
+    "references": [
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "X formally known as Twitter"
+        },
+        "uri": {
+          "@value": "https://x.com/miggi_d"
+        }
+      },
+      {
+        "@type": "Identity",
+        "label": {
+          "@value": "Verified X account"
+        },
+        "uri": {
+          "@value": "https://x.com/miggi_d"
+        }
+      }
+    ]
+  }
+}
